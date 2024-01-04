@@ -1,6 +1,6 @@
 # IMHD$`^2`$: Inertial and Multiview Highly Dynamic Human-object Dataset
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/)
+[![arXiv](https://img.shields.io/badge/arXiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/)
 <!-- ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors) -->
 
 
@@ -24,7 +24,7 @@
 - [Dataset Structure](#dataset-structure)
 - [Example usage](#example-usage)
   - [Visualize IMU signals](#visualize-imu-signals)
-  - [Visualize Ground-Truth motion](#visualize-ground-truth-motion)
+  - [Visualize ground-truth motion](#visualize-ground-truth-motion)
 
 ## Getting Started
 We tested our code on ``Windows 10``, ``Windows 11``, ``Ubuntu 18.04 LTS`` and ``Ubuntu 20.04 LTS``.
@@ -119,7 +119,7 @@ If you find our data or paper helps, please consider citing:
 ```
 
 ## Acknowledgement
-We thank Jingyan Zhang and Hongdi Yang for settting up the capture system. We thank Jingyan Zhang, Zining Song, Jierui Xu, Weizhi Wang, Gubin Hu, Yelin Wang, Zhiming Yu, Xuanchen Liang, af and zr for data collection. We thank Xiao Yu, Yuntong Liu, Xiaofan Gu for data checking and annotations.
+We thank Jingyan Zhang and Hongdi Yang for settting up the capture system. We thank Jingyan Zhang, Zining Song, Jierui Xu, Weizhi Wang, Gubin Hu, Yelin Wang, Zhiming Yu, Xuanchen Liang, af and zr for data collection. We thank Xiao Yu, Yuntong Liu and Xiaofan Gu for data checking and annotations.
 
 ## Licenses
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
