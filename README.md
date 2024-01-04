@@ -3,7 +3,7 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/) ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors)
 
 
-> **I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions**
+> _**I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions**_
 > *Chengfeng Zhao, Juze Zhang, Jiashen Du, Ziwei Shan, Junye Wang, Jingyi Yu, Jingya Wang, Lan Xu\**
 
 ****
@@ -11,9 +11,6 @@
 <p align="center">
 <img src="assets/dataset_gallery_full.png" alt="teaser" width="8128"/>
 </p> 
-<video width="3840" autoplay muted loop>
-    <source src="assets/dataset.mp4" type="video/mp4">
-</video>
 
 ## 🔥News
 - ***Jan. 04, 2024:*** Fill out [the form]() to download dataset!
@@ -111,7 +108,7 @@ you should be able to see the video.  -->
 
 ## Citation
 If you find our data or paper helps, please consider citing:
-```
+```bibtex
 @article{zhao2023imhoi,
   title={I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions},
   author={Zhao, Chengfeng and Zhang, Juze and Du, Jiashen and Shan, Ziwei and Wang, Junye and Yu, Jingyi and Wang, Jingya and Xu, Lan},
