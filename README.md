@@ -1,4 +1,4 @@
-# IMHD$`^2`$: Inertial and Multiview Highly Dynamic Human-object Dataset
+# IMHD$`^2`$: Inertial and Multi-view Highly Dynamic human-object interactions Dataset
 
 [![arXiv](https://img.shields.io/badge/arXiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/)
 <!-- ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors) -->
