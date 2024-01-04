@@ -14,7 +14,7 @@
 </p> 
 
 ## 🔥News
-- ***Jan. 04, 2024:*** Fill out [the form]() to download dataset!
+- ***Jan. 04, 2024:*** Fill out [the form](https://forms.gle/3MDh3b4szhFwcYa26) to have access to IMHD$`^2`$!
 
 ## Contents
 - [Getting Started](#getting-started)
@@ -63,7 +63,7 @@ python setup.py install
 It is worth noting that we use the fast version of `neural_renderer` in [this repo](https://github.com/JiangWenPL/multiperson/tree/master/neural_renderer). You may have to modify the `.cu` files according to [this issue](https://github.com/daniilidis-group/neural_renderer/issues/144).
 
 ## Dataset Features
-IMHD$^2$ is featured by:
+IMHD$`^2`$ is featured by:
 - Human motion annotation in SMPL-H format, built on [EasyMocap](https://github.com/zju3dv/EasyMocap/tree/master)
 - Object motion annotation, built on [PHOSA](https://github.com/facebookresearch/phosa)
 - Well-scanned object geometry, using [Polycam](https://poly.cam/)
