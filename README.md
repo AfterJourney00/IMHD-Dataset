@@ -53,7 +53,7 @@ python setup.py install
 ```
 conda create -n imhd2 python=3.8 -y
 conda activate imhd2
-conda install --file conda_install_cuda117_pakage.txt
+conda install --file conda_install_cuda117_pakage.txt -c nvidia
 pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
 conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
