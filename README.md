@@ -1,6 +1,7 @@
-# IMHD$^2$: Inertial and Multiview Highly Dynamic Human-object Dataset
+# IMHD$`^2`$: Inertial and Multiview Highly Dynamic Human-object Dataset
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/) ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors)
+[![arXiv](https://img.shields.io/badge/Arxiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/)
+<!-- ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors) -->
 
 
 > **I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions**  
@@ -17,25 +18,25 @@
 
 ## Contents
 - [Getting Started](#getting-started)
-  - [<i class="fa-brands fa-windows"></i> For Windows](#for-windows)
-  - [<i class="fa-brands fa-linux"></i> For Ubuntu](#for-ubuntu)
+  - [For Windows](#for-windows)
+  - [For Ubuntu](#for-ubuntu)
 - [Dataset Features](#dataset-features)
 - [Dataset Structure](#dataset-structure)
 - [Example usage](#example-usage)
-  - [<i class="fa-solid fa-wave-square"></i> Visualize IMU signals](#visualize-imu-signals)
-  - [<i class="fa-regular fa-gem"></i> Visualize Ground-Truth motion](#visualize-ground-truth-motion)
+  - [Visualize IMU signals](#visualize-imu-signals)
+  - [Visualize Ground-Truth motion](#visualize-ground-truth-motion)
 
 ## Getting Started
 We tested our code on ``Windows 10``, ``Windows 11``, ``Ubuntu 18.04 LTS`` and ``Ubuntu 20.04 LTS``.
 
 All dependencies:
-> python>=3.8
-> CUDA=11.7
-> torch=1.13.0
-> pytorch3d
+> python>=3.8  
+> CUDA=11.7  
+> torch=1.13.0  
+> pytorch3d  
 > neural_renderer
 
-### <i class="fa-brands fa-windows"></i> For Windows
+### For Windows
 ```
 conda create -n imhd2 python=3.8 -y
 conda activate imhd2
@@ -48,7 +49,7 @@ git clone https://github.com/JiangWenPL/multiperson.git && cd neural_renderer
 python setup.py install
 ```
 
-### <i class="fa-brands fa-linux"></i> For Ubuntu
+### For Ubuntu
 ```
 conda create -n imhd2 python=3.8 -y
 conda activate imhd2
@@ -90,7 +91,7 @@ All the subfolders have the same structure as the shown one of ground truth.
 Coming soon...
 <!-- Here we describe some example usages of our dataset: 
 
-### <i class="fa-solid fa-wave-square"></i> Visualize IMU signals
+### Visualize IMU signals
 
 We provide sample code in `shanzw1.py` to visualize IMU signals in a graph. Run with:
 ```
@@ -98,7 +99,7 @@ python shanzw1.py ......
 ```
  
 
-### <i class="fa-regular fa-gem"></i> Visualize Ground-Truth motion
+### Visualize Ground-Truth motion
 
 We provide example code in `shanzw2.py` to visualize our ground-truth data. Once you have the dataset and dependencies ready, run:
 ```
