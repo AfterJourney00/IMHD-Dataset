@@ -3,7 +3,7 @@
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.08869-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.08869) [![project page](https://img.shields.io/badge/project_page-blue)](https://afterjourney00.github.io/IM-HOI.github.io/) ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=AfterJourney00.IMHD-Dataset&left_color=red&right_color=green&left_text=visitors)
 
 
-> _**I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions**_
+> **I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions**  
 > *Chengfeng Zhao, Juze Zhang, Jiashen Du, Ziwei Shan, Junye Wang, Jingyi Yu, Jingya Wang, Lan Xu\**
 
 ****
