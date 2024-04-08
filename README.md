@@ -48,7 +48,7 @@ data/
 |--------<sequence_name>/
 |----------gt_<part_id>_<start>_<end>.pkl
 ```
-All the sub-folders have the similar detailed structure as the shown one of ground truth. Particularly, since motion annotations of some part in some sequence are not ideal, there may exist several `.pkl` files under one sequence folder. To parse the file name meaning of leaf `.pkl` files, here is an example: `gt_<0>_<10>_<100>.pkl: the first motion part which starts from frame_10 and ends at frame_100`.
+All sub-folders have the similar detailed structure as the shown one of ground truth. Particularly, since motion annotations of some part in some sequence are not ideal, there may exist several `.pkl` files under one sequence folder. To parse the file name meaning of leaf `.pkl` files, here is an example: `gt_0_10_100.pkl: the first motion part which starts from frame_10 and ends at frame_100`.
 
 ## Getting Started
 We tested our code on ``Windows 10``, ``Windows 11``, ``Ubuntu 18.04 LTS`` and ``Ubuntu 20.04 LTS``.
@@ -84,7 +84,7 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 
 ### How to use
 1. Prepare data. Download IMHD$`^2`$ from [here](https://forms.gle/3MDh3b4szhFwcYa26) and place it under the root directory in the [pre-defined structure](#dataset-structure).
-2. Prepare body model. Please refer to [body_model](./body_model/README.md). 
+2. Prepare body model. Please refer to [body_model](https://github.com/AfterJourney00/IMHD-Dataset/tree/master/body_model). 
 3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be stored in `visualizations/`.
 
 ## Citation
