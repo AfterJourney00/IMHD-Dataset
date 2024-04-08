@@ -14,53 +14,16 @@
 </p> 
 
 ## 🔥News
-- ***Jan. 04, 2024:*** Fill out [the form](https://forms.gle/3MDh3b4szhFwcYa26) to have access to IMHD$`^2`$!
+- ***March, 2024:*** 🎉🎉 [I'M HOI](https://afterjourney00.github.io/IM-HOI.github.io/) is accepted to CVPR 2024!
+- ***Jan. 04, 2024:*** 🔈🔈 Fill out [the form](https://forms.gle/3MDh3b4szhFwcYa26) to have access to IMHD$`^2`$!
 
 ## Contents
+- [Dataset Features](#dataset-features)
+- [Dataset Structure](#dataset-structure)
 - [Getting Started](#getting-started)
   - [For Windows](#for-windows)
   - [For Ubuntu](#for-ubuntu)
-- [Dataset Features](#dataset-features)
-- [Dataset Structure](#dataset-structure)
-- [Example usage](#example-usage)
-  - [Visualize IMU signals](#visualize-imu-signals)
-  - [Visualize ground-truth motion](#visualize-ground-truth-motion)
-
-## Getting Started
-We tested our code on ``Windows 10``, ``Windows 11``, ``Ubuntu 18.04 LTS`` and ``Ubuntu 20.04 LTS``.
-
-All dependencies:
-> python>=3.8  
-> CUDA=11.7  
-> torch=1.13.0  
-> pytorch3d  
-> neural_renderer
-
-### For Windows
-```
-conda create -n imhd2 python=3.8 -y
-conda activate imhd2
-conda install pytorch=1.13.0 torchvision pytorch-cuda=11.7 -c pytorch -c nvidia
-conda install -c fvcore -c iopath -c conda-forge fvcore iopath
-git clone https://github.com/facebookresearch/pytorch3d.git
-cd pytorch3d && pip install -e . --ignored-install PyYAML
-cd ../
-git clone https://github.com/JiangWenPL/multiperson.git && cd neural_renderer
-python setup.py install
-```
-
-### For Ubuntu
-```
-conda create -n imhd2 python=3.8 -y
-conda activate imhd2
-conda install --file conda_install_cuda117_pakage.txt -c nvidia
-pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
-conda install -c fvcore -c iopath -c conda-forge fvcore iopath
-pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
-git clone https://github.com/JiangWenPL/multiperson.git && cd neural_renderer
-python setup.py install
-```
-It is worth noting that we use the fast version of `neural_renderer` in [this repo](https://github.com/JiangWenPL/multiperson/tree/master/neural_renderer). You may have to modify the `.cu` files according to [this issue](https://github.com/daniilidis-group/neural_renderer/issues/144).
+  - [How to use](#how-to-use)
 
 ## Dataset Features
 IMHD$`^2`$ is featured by:
@@ -73,7 +36,7 @@ IMHD$`^2`$ is featured by:
 
 ## Dataset Structure
 ```
-IMHD2/
+data/
 |--calibrations/           # camera intrinsics and world-to-cam extrinsics
 |--objects_template/       # raw and downsampled geometry
 |--imu/                    # pre-processed IMU signal
@@ -83,29 +46,46 @@ IMHD2/
 |----<date>/
 |------<segment_name>/
 |--------<sequence_name>/
-|----------xxxxxx.pkl
+|----------gt_<part_id>_<start>_<end>.pkl
 ```
-All the subfolders have the same structure as the shown one of ground truth.
+All the sub-folders have the similar detailed structure as the shown one of ground truth. Particularly, since motion annotations of some part in some sequence are not ideal, there may exist several `.pkl` files under one sequence folder. To parse the file name meaning of leaf `.pkl` files, here is an example: `gt_<0>_<10>_<100>.pkl: the first motion part which starts from frame_10 and ends at frame_100`.
 
-## Example usage
-Coming soon...
-<!-- Here we describe some example usages of our dataset: 
+## Getting Started
+We tested our code on ``Windows 10``, ``Windows 11``, ``Ubuntu 18.04 LTS`` and ``Ubuntu 20.04 LTS``.
 
-### Visualize IMU signals
+All dependencies:
+> python>=3.8  
+> CUDA=11.7  
+> torch=1.13.0  
+> pytorch3d  
+> opencv-python  
+> matplotlib  
+> smplx
 
-We provide sample code in `shanzw1.py` to visualize IMU signals in a graph. Run with:
+### For Windows
 ```
-python shanzw1.py ...... 
+conda create -n imhd2 python=3.8 -y
+conda activate imhd2
+conda install pytorch=1.13.0 torchvision pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+git clone https://github.com/facebookresearch/pytorch3d.git
+cd pytorch3d && pip install -e . --ignore-installed PyYAML
 ```
- 
 
-### Visualize Ground-Truth motion
+### For Ubuntu
+```
+conda create -n imhd2 python=3.8 -y
+conda activate imhd2
+conda install --file conda_install_cuda117_pakage.txt -c nvidia
+pip install torch==1.13.0+cu117 torchvision==0.14.0+cu117 torchaudio==0.13.0 --extra-index-url https://download.pytorch.org/whl/cu117
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
+```
 
-We provide example code in `shanzw2.py` to visualize our ground-truth data. Once you have the dataset and dependencies ready, run:
-```
-python shanzw2.py ...... 
-```
-you should be able to see the video.  -->
+### How to use
+1. Prepare data. Download IMHD$`^2`$ from [here](https://forms.gle/3MDh3b4szhFwcYa26) and place it under the root directory in the [pre-defined structure](#dataset-structure).
+2. Prepare body model. Please refer to [body_model](./body_model/README.md). 
+3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be stored in `visualizations/`.
 
 ## Citation
 If you find our data or paper helps, please consider citing:
