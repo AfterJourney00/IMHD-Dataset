@@ -85,7 +85,7 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 ### How to use
 1. Prepare data. Download IMHD$`^2`$ from [here](https://forms.gle/3MDh3b4szhFwcYa26) and place it under the root directory in the [pre-defined structure](#dataset-structure).
 2. Prepare body model. Please refer to [body_model](https://github.com/AfterJourney00/IMHD-Dataset/tree/master/body_model). 
-3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be stored in `visualizations/`.
+3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be saved in `visualizations/`.
 
 ## Citation
 If you find our data or paper helps, please consider citing:
