@@ -38,8 +38,8 @@ IMHD$`^2`$ is featured by:
 ```
 data/
 |--calibrations/           # camera intrinsics and world-to-cam extrinsics
-|--objects_template/       # raw and downsampled geometry
-|--imu/                    # pre-processed IMU signal
+|--object_templates/       # raw and downsampled geometry
+|--imu_preprocessed/       # pre-processed IMU signal
 |--keypoints2d/            # body keypoints in OP25 format and hand keypoints in MediaPipe format
 |--keypoints3d/            # body keypoints in OP25 format and hand keypoints in MediaPipe format
 |--ground_truth/           # human motion in SMPL-H format and rigid object motion
