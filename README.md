@@ -91,10 +91,15 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 
 ## FAQs
 **Q1: Which coordinate are the ground-truth motions in? How to align all the motions across different dates?**
+
 *A1: The ground-truth motions are in the **world coordinate** which was calibrated using multi-camera system and may different across dates. To align them, you can use the provided camera parameters in ``calibrations/`` to transform all motion data to camera coordinate.*
+
 **Q2: Which category of object does the motions named with 'bat' in ``20230825/`` and ``20230827/`` interact with?**
+
 *A2: The interacting object category of motions in ``20230825/`` and ``20230827/`` is baseball bat, corresponding to **'baseball'** in the ``object_templates/`` folder.*
+
 **Q3: Which camera serves as the main view?**
+
 *A3: The main view is from the camera labeled with '1'(starting from 0).*
 
 ## Citation
