@@ -14,6 +14,7 @@
 </p> 
 
 ## 🔥News
+- ***May, 2024:*** 🔈🔈 The 32-view 2D & 3D human keypoints have been released!
 - ***March, 2024:*** 🎉🎉 [I'M HOI](https://afterjourney00.github.io/IM-HOI.github.io/) is accepted to CVPR 2024!
 - ***Jan. 04, 2024:*** 🔈🔈 Fill out [the form](https://forms.gle/3MDh3b4szhFwcYa26) to have access to IMHD$`^2`$!
 
@@ -24,6 +25,7 @@
   - [For Windows](#for-windows)
   - [For Ubuntu](#for-ubuntu)
   - [How to use](#how-to-use)
+- [FAQs](#faqs)
 
 ## Dataset Features
 IMHD$`^2`$ is featured by:
@@ -87,6 +89,14 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 2. Prepare body model. Please refer to [body_model](https://github.com/AfterJourney00/IMHD-Dataset/tree/master/body_model). 
 3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be saved in `visualizations/`.
 
+## FAQs
+**Q1: Which coordinate are the ground-truth motions in? How to align all the motions across different dates?**
+*A1: The ground-truth motions are in the **world coordinate** which was calibrated using multi-camera system and may different across dates. To align them, you can use the provided camera parameters in ``calibrations/`` to transform all motion data to camera coordinate.*
+**Q2: Which category of object does the motions named with 'bat' in ``20230825/`` and ``20230827/`` interact with?**
+*A2: The interacting object category of motions in ``20230825/`` and ``20230827/`` is baseball bat, corresponding to **'baseball'** in the ``object_templates/`` folder.*
+**Q3: Which camera serves as the main view?**
+*A3: The main view is from the camera labeled with '1'(starting from 0).*
+
 ## Citation
 If you find our data or paper helps, please consider citing:
 ```bibtex
@@ -99,6 +109,8 @@ If you find our data or paper helps, please consider citing:
 ```
 
 ## Acknowledgement
+This work was supported by National Key R\&D Program of China (2022YFF0902301), Shanghai Local college capacity building program (22010502800). We also acknowledge support from Shanghai Frontiers Science Center of Human-centered Artificial Intelligence (ShangHAI).
+
 We thank Jingyan Zhang and Hongdi Yang for settting up the capture system. We thank Jingyan Zhang, Zining Song, Jierui Xu, Weizhi Wang, Gubin Hu, Yelin Wang, Zhiming Yu, Xuanchen Liang, af and zr for data collection. We thank Xiao Yu, Yuntong Liu and Xiaofan Gu for data checking and annotations.
 
 ## Licenses
