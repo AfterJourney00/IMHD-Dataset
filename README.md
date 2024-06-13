@@ -105,11 +105,13 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 ## Citation
 If you find our data or paper helps, please consider citing:
 ```bibtex
-@article{zhao2023imhoi,
-  title={I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions},
-  author={Zhao, Chengfeng and Zhang, Juze and Du, Jiashen and Shan, Ziwei and Wang, Junye and Yu, Jingyi and Wang, Jingya and Xu, Lan},
-  journal={arXiv preprint arXiv:2312.08869},
-  year={2023}
+@InProceedings{zhao2024imhoi,
+    author    = {Zhao, Chengfeng and Zhang, Juze and Du, Jiashen and Shan, Ziwei and Wang, Junye and Yu, Jingyi and Wang, Jingya and Xu, Lan},
+    title     = {I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {729-741}
 }
 ```
 
