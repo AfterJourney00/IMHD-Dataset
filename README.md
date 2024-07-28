@@ -14,6 +14,7 @@
 </p> 
 
 ## 🔥News
+- ***July, 2024:*** 🔈🔈 The raw videos have been released!
 - ***May, 2024:*** 🔈🔈 The 32-view 2D & 3D human keypoints have been released!
 - ***March, 2024:*** 🎉🎉 [I'M HOI](https://afterjourney00.github.io/IM-HOI.github.io/) is accepted to CVPR 2024!
 - ***Jan. 04, 2024:*** 🔈🔈 Fill out [the form](https://forms.gle/3MDh3b4szhFwcYa26) to have access to IMHD$`^2`$!
