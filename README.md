@@ -14,6 +14,7 @@
 </p> 
 
 ## 🔥News
+- ***Sep, 2024:*** 🔈🔈 The instance-level segmentations have been released!
 - ***July, 2024:*** 🔈🔈 The raw videos have been released!
 - ***May, 2024:*** 🔈🔈 The 32-view 2D & 3D human keypoints have been released!
 - ***March, 2024:*** 🎉🎉 [I'M HOI](https://afterjourney00.github.io/IM-HOI.github.io/) is accepted to CVPR 2024!
@@ -102,6 +103,10 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 **Q3: Which camera serves as the main view?**
 
 *A3: The main view is from the camera labeled with '1'(starting from 0).*
+
+**Q3: How to decode the raw videos to images?**
+
+*A3: Please use the command: `ffmpeg -i <input_path> -qscale:v 2 -filter_complex -f image2 -v error -start_number 0 -threads 64 output/%06d.jpg`*
 
 ## Citation
 If you find our data or paper helps, please consider citing:
