@@ -9,8 +9,8 @@ body_model/
 |--body_model.py
 |--utils.py
 |--smplh/
-|----info.txt/
-|----LICENSE.txt/
+|----info.txt
+|----LICENSE.txt
 |----female/
 |------model.npz
 |----male/
