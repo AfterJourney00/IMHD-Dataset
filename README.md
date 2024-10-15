@@ -46,6 +46,8 @@ data/
 |--imu_preprocessed/       # pre-processed IMU signal
 |--keypoints2d/            # body keypoints in OP25 format and hand keypoints in MediaPipe format
 |--keypoints3d/            # body keypoints in OP25 format and hand keypoints in MediaPipe format
+|--video_release/          # raw videos from 32 multiple views
+|--mask_release/           # human and object separate segmentations from 32 multiple views
 |--ground_truth/           # human motion in SMPL-H format and rigid object motion
 |----<date>/
 |------<segment_name>/
@@ -88,7 +90,23 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 
 ### How to use
 1. Prepare data. Download IMHD$`^2`$ from [here](https://forms.gle/3MDh3b4szhFwcYa26) and place it under the root directory in the [pre-defined structure](#dataset-structure).
-2. Prepare body model. Please refer to [body_model](https://github.com/AfterJourney00/IMHD-Dataset/tree/master/body_model). 
+2. Prepare body model. Download [SMPL-H](https://mano.is.tue.mpg.de/login.php) (the extended SMPL+H model) and put the model files under the `body_model/` folder. Overall, the structure of `body_model/` folder should be:
+```
+body_model/
+|--README.md
+|--__init__.py
+|--body_model.py
+|--utils.py
+|--smplh/
+|----info.txt
+|----LICENSE.txt
+|----female/
+|------model.npz
+|----male/
+|------model.npz
+|----neutral/
+|------model.npz
+```
 3. Run `python visualization.py` to check how to load and visualize IMHD$`^2`$. Results will be saved in `visualizations/`.
 
 ## FAQs
