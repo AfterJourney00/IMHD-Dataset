@@ -14,6 +14,7 @@
 </p> 
 
 ## 🔥News
+- ***Nov, 2024:*** 🔈🔈 Download or view online our [videos](https://pan.quark.cn/s/e205d3c0e072) and [segmentations](https://pan.quark.cn/s/a1662d344e4a)!
 - ***Sep, 2024:*** 🔈🔈 The instance-level segmentations have been released!
 - ***July, 2024:*** 🔈🔈 The raw videos have been released!
 - ***May, 2024:*** 🔈🔈 The 32-view 2D & 3D human keypoints have been released!
