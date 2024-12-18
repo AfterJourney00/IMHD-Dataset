@@ -125,7 +125,7 @@ body_model/
 
 **Q3: How to decode the raw videos to images?**
 
-*A3: Please use the command: `ffmpeg -i <input_path> -qscale:v 2 -filter_complex -f image2 -v error -start_number 0 -threads 64 output/%06d.jpg`*
+*A3: Please use the command: `ffmpeg -i <input_path> -qscale:v 2 -f image2 -v error -start_number 0 -threads 64 output/%06d.jpg`*
 
 ## Citation
 If you find our data or paper helps, please consider citing:
