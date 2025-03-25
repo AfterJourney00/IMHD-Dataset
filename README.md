@@ -95,7 +95,6 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 2. Prepare body model. Download [SMPL-H](https://mano.is.tue.mpg.de/login.php) (the extended SMPL+H model) and put the model files under the `body_model/` folder. Overall, the structure of `body_model/` folder should be:
 ```
 body_model/
-|--README.md
 |--__init__.py
 |--body_model.py
 |--utils.py
