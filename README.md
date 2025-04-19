@@ -130,13 +130,12 @@ body_model/
 ## Citation
 If you find our data or paper helps, please consider citing:
 ```bibtex
-@InProceedings{zhao2024imhoi,
-    author    = {Zhao, Chengfeng and Zhang, Juze and Du, Jiashen and Shan, Ziwei and Wang, Junye and Yu, Jingyi and Wang, Jingya and Xu, Lan},
-    title     = {I'M HOI: Inertia-aware Monocular Capture of 3D Human-Object Interactions},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {729-741}
+@inproceedings{zhao2024imhoi,
+  title={I'm hoi: Inertia-aware monocular capture of 3d human-object interactions},
+  author={Zhao, Chengfeng and Zhang, Juze and Du, Jiashen and Shan, Ziwei and Wang, Junye and Yu, Jingyi and Wang, Jingya and Xu, Lan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={729--741},
+  year={2024}
 }
 ```
 
