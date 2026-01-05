@@ -14,6 +14,7 @@
 </p> 
 
 ## 🔥News
+- ***Jan, 2026:*** 🔈🔈 IMHD$`^2`$ is now completely archived in HuggingFace, check and download it [here](https://huggingface.co/datasets/AfterJourney/IMHD-Dataset).
 - ***Feb, 2025:*** 🔈🔈 IMHD$`^2`$ joins [3rd Rhobin Challenge](https://rhobin-challenge.github.io/), welcome to participate!
 - ***Nov, 2024:*** 🔈🔈 Download or view online our [videos](https://pan.quark.cn/s/e205d3c0e072) and [segmentations](https://pan.quark.cn/s/a1662d344e4a)!
 - ***Sep, 2024:*** 🔈🔈 The instance-level segmentations have been released!
